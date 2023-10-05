@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+# CMake build directory
+/build/
+
+# CMake compile_commands.json file
+compile_commands.json
