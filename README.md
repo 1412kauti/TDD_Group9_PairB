@@ -1,6 +1,6 @@
 # TDD_Group9_PairB
 
-![CICD Workflow status](https://github.com/1412kauti/TDD_Group9_PairB/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg) 
+![CICD Workflow status](https://github.com/1412kauti/TDD_Group9_PairB/actions/workflows/cmake-multi-platform.yml/badge.svg) 
 [![codecov](https://codecov.io/gh/1412kauti/TDD_Group9_PairB/graph/badge.svg?token=DW2YG5VPUI)](https://codecov.io/gh/1412kauti/TDD_Group9_PairB)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
