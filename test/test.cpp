@@ -1,15 +1,18 @@
 #include <gtest/gtest.h>
-#include "lib1.hpp"
-#include "lib2.hpp"
+#include "PIDController.hpp"
 
-TEST(dummy_test, this_should_pass) {
-  EXPECT_EQ(1, 1);
-}
+TEST(PIDControllerTest, Compute) {
+    PIDController pid(1.0, 0.1, 0.01);
 
-TEST(dummy_test, this_should_pass_too) {
-  EXPECT_EQ(my_function1(3), 3);
-}
+    // Test case 1: Target and actual velocity are equal
+    double result1 = pid.compute(10.0, 10.0);
+    EXPECT_NEAR(result1, 0.0, 1e-5);
 
-TEST(dummy_test, this_will_fail) {
-  EXPECT_EQ(my_function2(3.2), 3.2);
+    // Test case 2: Target velocity is higher than actual
+    double result2 = pid.compute(20.0, 15.0);
+    EXPECT_NEAR(result2, 5.6, 1e-5);
+
+    // Test case 3: Target velocity is lower than actual
+    double result3 = pid.compute(5.0, 8.0);
+    EXPECT_NEAR(result3, -2.3, 1e-5);
 }
