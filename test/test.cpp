@@ -1,7 +1,7 @@
 #include <gtest/gtest.h>
 #include "PIDController.hpp"
 
-TEST(PIDControllerTest, Compute) {
+TEST(PIDControllerTest, Compute1) {
     PIDController pid(1.0, 0.1, 0.01);
 
     // Test case 1: Target and actual velocity are equal
@@ -10,7 +10,7 @@ TEST(PIDControllerTest, Compute) {
 }
 
 
-TEST(PIDControllerTest, Compute) {
+TEST(PIDControllerTest, Compute2) {
     PIDController pid(1.0, 0.1, 0.01);
 
     // Test case 2: Target velocity is higher than actual
