@@ -37,3 +37,6 @@
 
 # CMake compile_commands.json file
 compile_commands.json
+
+#VSCode Config
+.vscode/

@@ -7,10 +7,10 @@ add_executable(shell-app
 # Any include directories needed to build this target.
 # Note: we do not need to specify the include directories for the
 # dependent libraries, they are automatically included.
-target_include_directories(shell-app PUBLIC
-  # list inclue directories:
-  ${CMAKE_SOURCE_DIR}/include
-)
+# target_include_directories(shell-app PUBLIC
+#   # list inclue directories:
+#   ${CMAKE_SOURCE_DIR}/include
+# )
 
 # Any dependent libraires needed to build this target.
 target_link_libraries(shell-app PUBLIC
