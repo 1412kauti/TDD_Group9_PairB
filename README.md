@@ -13,6 +13,7 @@
 ## Clone Repository
 ```sh
 git clone https://github.com/1412kauti/TDD_Group9_PairB.git
+cd TDD_Group9_PairB
 ```
 ## Compiling
 ```sh
