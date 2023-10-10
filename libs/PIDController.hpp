@@ -55,4 +55,4 @@ private:
     double integral_;   ///< The integral of the error for integral calculation
 };
 
-#endif PIDCONTROLLER_HPP 
+#endif
